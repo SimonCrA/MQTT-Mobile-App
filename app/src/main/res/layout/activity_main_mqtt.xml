@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivityMQTT">
+
+
+    <ImageView
+        android:id="@+id/MQTTStatus"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="100dp" />
+
+
+    <TextView
+        android:id="@+id/publishStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Publish Status"
+        android:minWidth="200dp"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/onPublishBtn"
+        style="@style/Widget.AppCompat.DrawerArrowToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="?attr/colorButtonNormal"
+        android:fadingEdge="horizontal"
+        android:minWidth="200dp"
+        android:onClick="pub"
+        android:text="Publish"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse" />
+
+</LinearLayout>
